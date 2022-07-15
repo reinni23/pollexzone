@@ -1,3 +1,24 @@
+//all menu tab button
+
+function allmenuClick() {
+  if ($(".allmenutab").css("display") == "none") {
+    $(".allmenutab").show();
+    $(".bartop").css({
+      "background-color": "#fff",
+      "transform": "rotate(45deg)",
+    });
+    $(".barmid").css(
+      'display','none'
+    );
+    $(".barbot").css({
+      "background-color": "#fff",
+      "transform": "rotate(-45deg)",
+    });
+  } else {
+    $(".allmenutab").hide();
+  }
+}
+
 //image scroll
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
