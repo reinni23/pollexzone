@@ -1,21 +1,38 @@
-//all menu tab button
+AOS.init();
 
 function allmenuClick() {
   if ($(".allmenutab").css("display") == "none") {
+    $(".logo_color").css('opacity','0');
+    $(".logo_white").css('opacity','1');
     $(".allmenutab").show();
     $(".bartop").css({
       "background-color": "#fff",
-      "transform": "rotate(45deg)",
+      "-webkit-transform": "rotate(45deg)",
+      top: "9px",
     });
-    $(".barmid").css(
-      'display','none'
-    );
+    $(".barmid").css("display", "none");
     $(".barbot").css({
       "background-color": "#fff",
-      "transform": "rotate(-45deg)",
+      "-webkit-transform": "rotate(-45deg)",
+      top: "9px",
+      width: "100%",
     });
   } else {
+    $(".logo_color").css('opacity','1');
+    $(".logo_white").css('opacity','0');
     $(".allmenutab").hide();
+    $(".bartop").css({
+      "background-color": "#000",
+      "-webkit-transform": "rotate(0)",
+      top: "2px",
+    });
+    $(".barmid").css("display", "block");
+    $(".barbot").css({
+      "background-color": "#000",
+      "-webkit-transform": "rotate(0)",
+      top: "16px",
+      width: "60%",
+    });
   }
 }
 
