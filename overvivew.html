@@ -20,6 +20,7 @@
       <h1>
         <a href="index.html" class="logo">
           <img src="img/logo.png" />
+          <img src="img/logo_white.png" class="logo_white" />
         </a>
       </h1>
       <div class="logo_ps">
@@ -27,12 +28,77 @@
         <img src="img/jas_220103.png" class="logo_jas" />
         <img src="img/ntre_220103.png" class="logo_ntre" />
       </div>
-      <div class="btn_menu">
-        <a href="">
-          <span class="bartop"></span>
-          <span class="barmid"></span>
-          <span class="barbot"></span>
-        </a>
+      <a class="btn_menu" onclick="allmenuClick()">
+        <span class="bartop"></span>
+        <span class="barmid"></span>
+        <span class="barbot"></span>
+      </a>
+      <div class="allmenutab">
+        <div class="allmenu_wrap">
+          <div class="allmenu_inner">
+            <ul class="allmenu">
+              <li>
+                <span>폴렉스존 소개</span>
+                <a>
+                  <em>01</em>
+                  <span>폴렉스존 소개</span>
+                </a>
+                <ul>
+                  <li>기업소개</li>
+                  <li>주요고객사</li>
+                  <li>센터현황</li>
+                  <li>오시는 길</li>
+                </ul>
+              </li>
+              <li>
+                <span>사업영역</span>
+                <a>
+                  <em>02</em>
+                  <span>사업영역</span>
+                </a>
+                <ul>
+                  <li>사업영역</li>
+                </ul>
+              </li>
+              <li>
+                <span>핵심경쟁력</span>
+                <a>
+                  <em>03</em>
+                  <span>핵심경쟁력</span>
+                </a>
+                <ul>
+                  <li>전문 운영조직</li>
+                  <li>센터운영 및 컨설팅</li>
+                  <li>시스템 & 인프라</li>
+                </ul>
+              </li>
+              <li>
+                <span>폴렉스존 소식</span>
+                <a>
+                  <em>04</em>
+                  <span>폴렉스존 소식</span>
+                </a>
+                <ul>
+                  <li>공지사항</li>
+                  <li>인증 및 수상내역</li>
+                  <li>고객문의</li>
+                </ul>
+              </li>
+              <li>
+                <span>인재채용</span>
+                <a>
+                  <em>05</em>
+                  <span>인재채용</span>
+                </a>
+                <ul>
+                  <li>인재상</li>
+                  <li>채용안내</li>
+                  <li>채용공고</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
       <ul class="gnb">
         <li><a href="">폴렉스존 소개</a></li>
@@ -64,7 +130,11 @@
           </div>
           <div class="about_img">
             <div class="about_imgf">
-              <img src="img/img_intrd.jpg" data-aos="fade-up" data-aos-duration="1000"/>
+              <img
+                src="img/img_intrd.jpg"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              />
             </div>
             <div class="pollex_img"><img src="img/img_intrd_txt.png" /></div>
           </div>
@@ -262,5 +332,7 @@
       </ul>
     </footer>
   </body>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="js/main.js"></script>
 </html>
