@@ -137,6 +137,36 @@ header h1 a img {
   top: 16px;
   width: 60%;
 }
+.btn_menu:hover span.bartop {
+  width: 60%;
+}
+.btn_menu:hover span.barmid {
+  width: 100%;
+}
+.btn_menu:hover span.barbot {
+  width: 100%;
+}
+.btn_menu.active:hover span {
+  width: 100%;
+}
+.btn_menu.active span {
+  background-color: #fff;
+  width: 100%;
+}
+.btn_menu.active span.bartop {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  top: 9px;
+}
+.btn_menu.active span.barmid {
+  width: 0;
+}
+.btn_menu.active span.barbot {
+  transform:rotate(-45deg);
+  -webkit-transform:rotate(-45deg);
+  top: 9px;
+}
+
 .gnb {
   display: flex;
   position: relative;
@@ -162,9 +192,6 @@ header h1 a img {
 .allmenutab {
   display: none;
   position: fixed;
-  left: 0;
-  top: 0;
-  bottom: 0;
   width: 100%;
   height: 100%;
   background-color: #00305b;
